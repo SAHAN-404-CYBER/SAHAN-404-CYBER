@@ -1,6 +1,5 @@
 <p align="center">
  <img width="100px" src="https://images.app.goo.gl/ZKgRc3dXZh3MxsVL6
- <img width="270px" src="https://images.app.goo.gl/VjupKPik5Dw8tiLB6
 <h2 align="center">GitHub Readme Stats</h2>
 
 > **Note**
