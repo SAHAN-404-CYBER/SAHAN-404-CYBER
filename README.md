@@ -1,3 +1,5 @@
+ <img width="100px" src="https://images.app.goo.gl/VjupKPik5Dw8tiLB6
+
 <p align="center">
  <img width="100px" src="https://images.app.goo.gl/ZKgRc3dXZh3MxsVL6
  <h2 align="center">GitHub Readme Stats</h2>
@@ -5,25 +7,6 @@
 </p>
   <p align="center">
 
-
--   [GitHub Stats Card](#github-stats-card)
--   [GitHub Extra Pins](#github-extra-pins)
--   [Top Languages Card](#top-languages-card)
--   [Wakatime Week Stats](#wakatime-week-stats)
--   [Themes](#themes)
-    -   [Responsive Card Theme](#responsive-card-theme)
--   [Customization](#customization)
-    -   [Common Options](#common-options)
-    -   [Stats Card Exclusive Options](#stats-card-exclusive-options)
-    -   [Repo Card Exclusive Options](#repo-card-exclusive-options)
-    -   [Language Card Exclusive Options](#language-card-exclusive-options)
-    -   [Wakatime Card Exclusive Option](#wakatime-card-exclusive-options)
--   [Deploy Yourself](#deploy-on-your-own)
-    -   [On Vercel](#on-vercel)
-    -   [On other platforms](#on-other-platforms)
-    -   [Keep your fork up to date](#keep-your-fork-up-to-date)
-
-# GitHub Stats Card
 
 Copy-paste this into your markdown content, and that is it. Simple!
 
@@ -252,88 +235,6 @@ You can provide multiple comma-separated values in the bg_color option to render
 -   `api_domain` - Set a custom API domain for the card, e.g. to use services like [Hakatime](https://github.com/mujx/hakatime) or [Wakapi](https://github.com/muety/wakapi) _(string)_. Default `Waka API`.
 -   `range` – Request a range different from your WakaTime default, e.g. `last_7_days`. See [WakaTime API docs](https://wakatime.com/developers#stats) for a list of available options. _(YYYY-MM, last_7_days, last_30_days, last_6_months, last_year, or all_time)_. Default `all_time`.
 
-* * *
-
-# GitHub Extra Pins
-
-GitHub extra pins allow you to pin more than six repositories in your profile using a GitHub readme profile.
-
-Yay! You are no longer limited to 6 pinned repositories.
-
-### Usage
-
-Copy-paste this code into your readme and change the links.
-
-Endpoint: `api/pin?username=SAHAN-404-CYBER&repo=github-readme-stats`
-
-```md
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=SAHAN-404-CYBER&repo=github-readme-stats)](https://github.com/SAHAN-404-CYBER/github-readme-stats)
-```
-
-### Demo
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=SAHAN-404-CYBER&repo=github-readme-stats)](https://github.com/SAHAN-404-CYBER/github-readme-stats)
-
-Use [show_owner](#customization) variable to include the repo's owner username
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=SAHAN-404-CYBER&repo=github-readme-stats&show_owner=true)](https://github.com/SAHAN-404-CYBER/github-readme-stats)
-
-# Top Languages Card
-
-The top languages card shows a GitHub user's most frequently used top language.
-
-> **Note**
-> Top Languages does not indicate my skill level or anything like that; it's a GitHub metric to determine which languages have the most code on GitHub. It is a new feature of github-readme-stats.
-
-### Usage
-
-Copy-paste this code into your readme and change the links.
-
-Endpoint: `api/top-langs?username=SAHAN-404-CYBER`
-
-```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SAHAN-404-CYBER)](https://github.com/SAHAN-404-CYBER/github-readme-stats)
-```
-
-### Exclude individual repositories
-
-You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repositories.
-
-```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SAHAN-404-CYBER&exclude_repo=github-readme-stats,SAHAN-404-CYBER.github.io)](https://github.com/SAHAN-404-CYBER/github-readme-stats)
-```
-
-### Hide individual languages
-
-You can use `&hide=language1,language2` parameter to hide individual languages.
-
-```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SAHAN-404-CYBER&hide=javascript,html)](https://github.com/SAHAN-404-CYBER/github-readme-stats)
-```
-
-### Show more languages
-
-You can use the `&langs_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
-
-```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SAHAN-404-CYBER&langs_count=8)](https://github.com/SAHAN-404-CYBER/github-readme-stats)
-```
-
-### Compact Language Card Layout
-
-You can use the `&layout=compact` option to change the card design.
-
-```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SAHAN-404-CYBER&layout=compact)](https://github.com/SAHAN-404-CYBER/github-readme-stats)
-```
-
-### Hide Progress Bars
-
-You can use the `&hide_progress=true` option to hide the percentages and the progress bars (layout will be automatically set to `compact`).
-
-```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SAHAN-404-CYBER&hide_progress=true)](https://github.com/SAHAN-404-CYBER/github-readme-stats)
-```
 
 ### Demo
 
@@ -357,3 +258,22 @@ Change the `?username=` value to your [Wakatime](https://wakatime.com) username.
 
 > **Note**:
 > Please be aware that we currently only show data from Wakatime profiles that are public.
+
+-   [GitHub Stats Card](#github-stats-card)
+-   [GitHub Extra Pins](#github-extra-pins)
+-   [Top Languages Card](#top-languages-card)
+-   [Wakatime Week Stats](#wakatime-week-stats)
+-   [Themes](#themes)
+    -   [Responsive Card Theme](#responsive-card-theme)
+-   [Customization](#customization)
+    -   [Common Options](#common-options)
+    -   [Stats Card Exclusive Options](#stats-card-exclusive-options)
+    -   [Repo Card Exclusive Options](#repo-card-exclusive-options)
+    -   [Language Card Exclusive Options](#language-card-exclusive-options)
+    -   [Wakatime Card Exclusive Option](#wakatime-card-exclusive-options)
+-   [Deploy Yourself](#deploy-on-your-own)
+    -   [On Vercel](#on-vercel)
+    -   [On other platforms](#on-other-platforms)
+    -   [Keep your fork up to date](#keep-your-fork-up-to-date)
+
+# GitHub Stats Card
