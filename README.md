@@ -1,5 +1,3 @@
- <img width="100px" src="https://images.app.goo.gl/VjupKPik5Dw8tiLB6
-
 <p align="center">
  <img width="100px" src="https://images.app.goo.gl/ZKgRc3dXZh3MxsVL6
  <h2 align="center">GitHub Readme Stats</h2>
@@ -28,6 +26,7 @@ You can pass a query parameter `&hide=` to hide any specific stats with comma-se
 ```md
 ![SAHAN-404-CYBER GitHub stats](https://github-readme-stats.vercel.app/api?username=SAHAN-404-CYBER&hide=contribs,prs)
 ```
+
 
 ### Adding private contributions count to total commits count
 
@@ -119,121 +118,6 @@ You can use [GitHub's theme context](https://github.blog/changelog/2021-11-24-sp
 
 [![SAHAN-404-CYBER GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=SAHAN-404-CYBER&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/SAHAN-404-CYBER/github-readme-stats#gh-dark-mode-only)
 [![SAHAN-404-CYBER GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=SAHAN-404-CYBER&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/SAHAN-404-CYBER/github-readme-stats#gh-light-mode-only)
-
-</details>
-
-##### Use GitHub's new media feature
-
-You can use [GitHub's new media feature](https://github.blog/changelog/2022-05-19-specify-theme-context-for-images-in-markdown-beta/) in HTML to specify whether to display images for light or dark themes. This is done using the HTML `<picture>` element in combination with the `prefers-color-scheme` media feature.
-  
-```html
-<picture>
-<source 
-  srcset="https://github-readme-stats.vercel.app/api?username=SAHAN-404-CYBER&show_icons=true&theme=dark"
-  media="(prefers-color-scheme: dark)"
-/>
-<source
-  srcset="https://github-readme-stats.vercel.app/api?username=SAHAN-404-CYBER&show_icons=true"
-  media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-/>
-<img src="https://github-readme-stats.vercel.app/api?username=SAHAN-404-CYBER&show_icons=true" />
-</picture>
-```
-
-<details>
-<summary>:eyes: Show example</summary>
-
-<picture>
-<source 
-  srcset="https://github-readme-stats.vercel.app/api?username=SAHAN-404-CYBER&show_icons=true&theme=dark"
-  media="(prefers-color-scheme: dark)"
-/>
-<source
-  srcset="https://github-readme-stats.vercel.app/api?username=SAHAN-404-CYBER&show_icons=true"
-  media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-/>
-<img src="https://github-readme-stats.vercel.app/api?username=SAHAN-404-CYBER&show_icons=true" />
-</picture>
-
-</details>
-
-### Customization
-
-You can customize the appearance of your `Stats Card` or `Repo Card` however you wish with URL parameters.
-
-#### Common Options
-
--   `title_color` - Card's title color _(hex color)_. Default: `2f80ed`.
--   `text_color` - Body text color _(hex color)_. Default: `434d58`.
--   `icon_color` - Icons color if available _(hex color)_. Default: `4c71f2`.
--   `border_color` - Card's border color _(hex color)_. Default: `e4e2e2` (Does not apply when `hide_border` is enabled).
--   `bg_color` - Card's background color _(hex color)_ **or** a gradient in the form of _angle,start,end_. Default: `fffefe`
--   `hide_border` - Hides the card's border _(boolean)_. Default: `false`
--   `theme` - name of the theme, choose from [all available themes](./themes/README.md). Default: `default` theme. 
--   `cache_seconds` - set the cache header manually _(min: 14400, max: 86400)_. Default: `14400 seconds (4 hours)`.
--   `locale` - set the language in the card _(e.g. cn, de, es, etc.)_. Default: `en`.
--   `border_radius` - Corner rounding on the card. Default: `4.5`.
-
-> **Warning**
-> We use caching to decrease the load on our servers (see <https://github.com/SAHAN-404-CYBER/github-readme-stats/issues/1471#issuecomment-1271551425>). Our cards have a default cache of 4 hours (14400 seconds). Also, note that the cache is clamped to a minimum of 4 hours and a maximum of 24 hours.
-
-##### Gradient in bg_color
-
-You can provide multiple comma-separated values in the bg_color option to render a gradient with the following format:
-
-    &bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
-
-#### Stats Card Exclusive Options
-
--   `hide` - Hides the [specified items](#hiding-individual-stats) from stats _(Comma-separated values)_. Default: `[] (blank array)`.
--   `hide_title` - _(boolean)_. Default: `false`.
--   `card_width` - Set the card's width manually _(number)_. Default: `500px  (approx.)`.
--   `hide_rank` - _(boolean)_ hides the rank and automatically resizes the card width. Default: `false`.
--   `show_icons` - _(boolean)_. Default: `false`.
--   `include_all_commits` - Count total commits instead of just the current year commits _(boolean)_. Default: `false`.
--   `count_private` - Count private commits _(boolean)_. Default: `false`.
--   `line_height` - Sets the line height between text _(number)_. Default: `25`.
--   `exclude_repo` - Exclude stars from specified repositories _(Comma-separated values)_. Default: `[] (blank array)`.
--   `custom_title` - Sets a custom title for the card. Default:  `<username> GitHub Stats`.
--   `text_bold` - Use bold text _(boolean)_. Default: `true`.
--   `disable_animations` - Disables all animations in the card _(boolean)_. Default: `false`.
--   `ring_color` - Color of the rank circle _(hex color)_. Defaults to the theme ring color if it exists and otherwise the title color.
-
-> **Note**
-> When hide_rank=`true`, the minimum card width is 270 px + the title length and padding.
-
-#### Repo Card Exclusive Options
-
--   `show_owner` - Show the repo's owner name _(boolean)_. Default: `false`.
-
-#### Language Card Exclusive Options
-
--   `hide` - Hide the languages specified from the card _(Comma-separated values)_. Default: `[] (blank array)`.
--   `hide_title` - _(boolean)_. Default: `false`.
--   `layout` - Switch between two available layouts `default` & `compact`. Default: `default`.
--   `card_width` - Set the card's width manually _(number)_. Default `300`.
--   `langs_count` - Show more languages on the card, between 1-10 _(number)_. Default `5`.
--   `exclude_repo` - Exclude specified repositories _(Comma-separated values)_. Default: `[] (blank array)`.
--   `custom_title` - Sets a custom title for the card _(string)_. Default `Most Used Languages`.
--   `disable_animations` - Disables all animations in the card _(boolean)_. Default: `false`.
--   `hide_progress` - It uses the compact layout option, hides percentages, and removes the bars. Default: `false`.
-
-> **Warning**
-> Language names should be URI-escaped, as specified in [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding)
-> (i.e: `c++` should become `c%2B%2B`, `jupyter notebook` should become `jupyter%20notebook`, etc.) You can use
-> [urlencoder.org](https://www.urlencoder.org/) to help you do this automatically.
-
-#### Wakatime Card Exclusive Options
-
--   `hide` - Hide the languages specified from the card _(Comma-separated values)_. Default: `[] (blank array)`.
--   `hide_title` - _(boolean)_. Default `false`.
--   `line_height` - Sets the line height between text _(number)_. Default `25`.
--   `hide_progress` - Hides the progress bar and percentage _(boolean)_. Default `false`.
--   `custom_title` - Sets a custom title for the card _(string)_. Default `Wakatime Stats`.
--   `layout` - Switch between two available layouts `default` & `compact`.  Default `default`.
--   `langs_count` - Limit the number of languages on the card, defaults to all reported languages _(number)_.
--   `api_domain` - Set a custom API domain for the card, e.g. to use services like [Hakatime](https://github.com/mujx/hakatime) or [Wakapi](https://github.com/muety/wakapi) _(string)_. Default `Waka API`.
--   `range` – Request a range different from your WakaTime default, e.g. `last_7_days`. See [WakaTime API docs](https://wakatime.com/developers#stats) for a list of available options. _(YYYY-MM, last_7_days, last_30_days, last_6_months, last_year, or all_time)_. Default `all_time`.
 
 
 ### Demo
